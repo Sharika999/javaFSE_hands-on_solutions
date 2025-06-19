@@ -11,7 +11,7 @@ This repository contains my solutions for the **mandatory hands-on exercises** f
 - Each week contains:
   - Hands-on exercise folders
   - Source code files (`.java`)
-  - Input files (if any)
+  - Exercise.md which contains the solutions based on given assignments.
   - Output screenshots for verification
 
 ## 📌 Submission Status
