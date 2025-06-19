@@ -7,7 +7,7 @@
 This repository contains my solutions for the **mandatory hands-on exercises** for the **DN 4.0 Deep Skilling - Java FSE Track**, as per the official Handbook and SME guidelines.
 
 ## ✅ What’s Included
-- Week-wise folders: `Week1/`, `Week2/`...
+- Every week-wise completed folders
 - Each week contains:
   - Hands-on exercise folders
   - Source code files (`.java`)
