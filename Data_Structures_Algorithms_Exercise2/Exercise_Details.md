@@ -16,6 +16,7 @@ When we analyze search operations:
 **Time Complexity Comparison:**
 
 - **Linear Search:** O(n) — checks each element one by one.
+- 
 - **Binary Search:** O(log n) — repeatedly splits the sorted data and narrows down the search.
 
 ---
