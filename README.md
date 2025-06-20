@@ -1,7 +1,8 @@
 # 📚 Digital Nurture 4.0 - Deep Skilling (Java FSE) - Hands-on Solutions
 
 ## Author
-**Name:** Sharika
+**Name:** Sharika Ciddam
+## Superset ID: 6396591
 
 ## 📁 Repository Purpose
 This repository contains my solutions for the **mandatory hands-on exercises** for the **DN 4.0 Deep Skilling - Java FSE Track**, as per the official Handbook and SME guidelines.
