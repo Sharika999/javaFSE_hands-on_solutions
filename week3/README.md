@@ -1,4 +1,4 @@
-\# Week 3 – Spring Boot, JPA \& Hibernate Hands-On Summary
+# Week 3 – Spring Boot, JPA \& Hibernate Hands-On Summary
 
 
 
@@ -6,7 +6,7 @@ This folder includes multiple Spring Boot exercises focused on integrating JPA a
 
 
 
-\## 📁 Folder Overview
+## 📁 Folder Overview
 
 
 
@@ -22,7 +22,7 @@ This folder includes multiple Spring Boot exercises focused on integrating JPA a
 
 
 
-\## 🛠 Technologies
+## 🛠 Technologies
 
 
 
@@ -40,7 +40,7 @@ This folder includes multiple Spring Boot exercises focused on integrating JPA a
 
 
 
-\## ✅ Learning Outcomes
+## ✅ Learning Outcomes
 
 
 
