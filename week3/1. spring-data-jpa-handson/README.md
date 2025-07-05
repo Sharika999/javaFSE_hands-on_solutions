@@ -1,4 +1,4 @@
-\# Week 3 – Spring Data JPA Hands‑On
+# Week 3 – Spring Data JPA Hands‑On
 
 
 
@@ -6,13 +6,13 @@ This Spring Boot project demonstrates CRUD operations using Spring Data JPA, Hib
 
 
 
-\## Technologies
+## Technologies
 
 \- Java 11, Spring Boot 2.4.3, Spring Data JPA, Hibernate, MySQL, Maven
 
 
 
-\## Structure
+## Structure
 
 \- `Country` entity, `CountryRepository`, and `CountryService`
 
@@ -22,7 +22,7 @@ This Spring Boot project demonstrates CRUD operations using Spring Data JPA, Hib
 
 
 
-\## Key Concept Differences
+## Key Concept Differences
 
 
 
@@ -34,7 +34,7 @@ This Spring Boot project demonstrates CRUD operations using Spring Data JPA, Hib
 
 
 
-\## Run
+## Run
 
 ```bash
 
