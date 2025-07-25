@@ -1,8 +1,5 @@
 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
 # Week 6 – Introduction to React & Single Page Applications (SPA)
 
 ## ✅ Objectives
@@ -98,7 +95,4 @@ Before starting, make sure you have:
 
 ---
 
-## 📁 Folder Structure
-
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Screenshots of the outputs have been attached along with the submitted files.
