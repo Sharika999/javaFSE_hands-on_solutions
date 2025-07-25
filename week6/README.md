@@ -1,70 +1,104 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Week 6 – Introduction to React & Single Page Applications (SPA)
 
-### `npm test`
+## ✅ Objectives
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Define SPA and its benefits
+A **Single Page Application (SPA)** is a web application that dynamically updates a single HTML page without reloading the whole page during navigation. It interacts with the browser by dynamically rewriting the current page.
 
-### `npm run build`
+**Benefits of SPA:**
+- Faster loading after initial load
+- Seamless user experience
+- Efficient data loading (only necessary data fetched)
+- Easier to build mobile-friendly apps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Define React and identify its working
+**React** is a JavaScript library developed by Facebook for building fast and interactive user interfaces.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**How React works:**
+- Uses a **component-based** architecture
+- Renders UI using a **virtual DOM**
+- Updates only parts of the page that change, improving performance
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Identify the differences between SPA and MPA
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Feature              | SPA                                      | MPA                                       |
+|---------------------|------------------------------------------|-------------------------------------------|
+| Page Reload         | No full-page reload                      | Every action reloads a new page           |
+| Speed               | Faster after first load                  | Slower due to frequent reloads            |
+| Routing             | Handled on client side                   | Handled on server side                    |
+| User Experience     | More dynamic and smooth                  | Traditional and less interactive          |
+| Development         | Needs JS frameworks like React/Angular   | Simpler, often server-rendered            |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4. Explain Pros & Cons of Single-Page Application
 
-## Learn More
+**Pros:**
+- Fast and responsive
+- Reduced server load
+- Reusable components
+- Easier to turn into mobile apps (via React Native)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Cons:**
+- SEO limitations
+- Initial load might be heavy
+- Browser history and navigation can be tricky
+- May not work well without JavaScript
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### 5. Explain about React
+React is an **open-source JavaScript library** used to build UIs, especially for SPAs. It follows a **declarative** approach and promotes **component-based** development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### 6. Define Virtual DOM
+The **Virtual DOM (VDOM)** is a lightweight JavaScript representation of the actual DOM. When a change occurs:
+1. React updates the virtual DOM.
+2. It compares (diffs) it with the previous version.
+3. Only the changed parts are updated in the real DOM.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This makes rendering faster and more efficient.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 7. Explain Features of React
+- **JSX** – JavaScript + HTML syntax
+- **Virtual DOM** – Efficient rendering
+- **Components** – Reusable UI blocks
+- **Unidirectional Data Flow** – Predictable state management
+- **Hooks** – Functional components with lifecycle and state logic
+- **Fast Rendering** – High performance for large apps
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔧 Hands-on Lab Instructions
 
-### Deployment
+### In this lab, you learned how to:
+- Set up a **React environment**
+- Use **create-react-app** to bootstrap a React project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## ⚙️ Prerequisites
+
+Before starting, make sure you have:
+- **Node.js** installed
+- **NPM (Node Package Manager)**
+- **Visual Studio Code (VS Code)**
+
+---
+
+## 📁 Folder Structure
+
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
