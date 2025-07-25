@@ -95,4 +95,4 @@ Before starting, make sure you have:
 
 ---
 
-##Screenshots of the outputs have been attached along with the submitted files.
+### Screenshots of the outputs have been attached along with the submitted files.
