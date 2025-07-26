@@ -2,7 +2,7 @@
 
 This project is part of **Week 6 assignment** for the Java FSE program. It is a simple React app named **StudentApp** that displays basic content using React components.
 
-## 📁 Folder Name
+## Folder Name
 `2_ReactJS_HOL`
 
 ## 🔧 Features Implemented
@@ -10,12 +10,12 @@ This project is part of **Week 6 assignment** for the Java FSE program. It is a 
 - Three components: **Home**, **About**, and **Contact**
 - All components display specific messages in the browser
 
-## 📸 Screenshots
+##  Screenshots
 Screenshots of the output are included in the `outputs/` folder for reference.
 
 ---
 
-## 📘 Conceptual Answers
+##  Conceptual Answers
 
 ### 1. Explain React components
 React components are **reusable UI building blocks** in a React application. They allow you to divide the UI into small, independent, and manageable pieces. Components can be either **class-based** or **function-based**.
@@ -43,7 +43,7 @@ There are two types of React components:
 ### 4. Explain class component
 A **class component** is a JavaScript class that extends `React.Component`. It must include a `render()` method to return JSX.
 
-```jsx
+
 class Welcome extends React.Component {
   render() {
     return <h1>Hello, {this.props.name}</h1>;
