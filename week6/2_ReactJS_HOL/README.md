@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# ReactJS Hands-On Lab – Student Management Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is part of Week 6 assignment for the Java FSE program. It is a simple React app named **StudentApp** that displays basic content using React components.
 
-## Available Scripts
+## 📁 Folder Name
+`2_ReactJS_HOL`
 
-In the project directory, you can run:
+## 🔧 Features Implemented
 
-### `npm start`
+- A React app created using `create-react-app`
+- Three components: `Home`, `About`, and `Contact`
+- All components display specific messages in the browser
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📸 Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Screenshots of the output are included in the `outputs` folder for reference.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📘 Conceptual Answers
 
-### `npm run build`
+### ✅ 1. Explain React components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React components are reusable and independent blocks of UI that can be rendered in a React application. Components help break the UI into smaller, manageable pieces. They can be class-based or function-based.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ✅ 2. Differences between components and JavaScript functions
 
-### `npm run eject`
+| JavaScript Function                | React Component                           |
+|-----------------------------------|-------------------------------------------|
+| Performs a specific task or logic | Returns JSX that represents UI            |
+| No JSX involved                   | Can return JSX (HTML-like syntax)         |
+| Not rendered by React             | Rendered as part of the React DOM         |
+| No state or lifecycle             | Can have state and lifecycle (in classes) |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ✅ 3. Types of components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Class Component** – ES6 classes that extend `React.Component`
+2. **Function Component** – Simple functions that return JSX
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### ✅ 4. Explain class component
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A class component is a JavaScript class that extends `React.Component`. It must include a `render()` method to return JSX.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Example:
+```jsx
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
