@@ -41,49 +41,19 @@ There are two types of React components:
 ---
 
 ### 4. Explain class component
-A **class component** is a JavaScript class that extends `React.Component`. It must include a `render()` method to return JSX.
-
-
-class Welcome extends React.Component {
-  render() {
-    return <h1>Hello, {this.props.name}</h1>;
-  }
-}
-
-
----
-
-
+A class component is a JavaScript class that extends React.Component. It must include a render() method and can use state and lifecycle methods.
 
 ### 5. Explain function component
-A function component is a plain JavaScript function that returns JSX. These are simpler and more commonly used in modern React with hooks.
-
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
-
-```jsx
-
----
-
+A function component is a simple JavaScript function that returns JSX. It’s commonly used in modern React and can use hooks like useState and useEffect.
 
 ### 6. Define component constructor
-The constructor method is used in class components to initialize state and bind methods.
-
-
-
-constructor(props) {
-  super(props);
-  this.state = { count: 0 };
-}
-
----
+The constructor() is a method used inside class components to initialize the component’s state and bind methods. It runs before the component mounts.
 
 ### 7. Define render() function
-The render() method is required in class components. It returns the JSX that React will render to the DOM.
+The render() method is required in class components. It returns the JSX that describes what should appear on the screen.
+
+ 
 
 
 
-render() {
-  return <div>Hello World</div>;
-}
+
