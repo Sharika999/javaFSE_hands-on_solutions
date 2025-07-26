@@ -1,0 +1,17 @@
+.score-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.name {
+  color: blue;
+}
+
+.school {
+  color: crimson;
+}
+
+.score {
+  color: green;
+  font-weight: bold;
+}
