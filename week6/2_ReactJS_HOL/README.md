@@ -43,13 +43,13 @@ There are two types of React components:
 ### 4. Explain class component
 A **class component** is a JavaScript class that extends `React.Component`. It must include a `render()` method to return JSX.
 
-
+```jsx
 class Welcome extends React.Component {
   render() {
     return <h1>Hello, {this.props.name}</h1>;
   }
 }
-
+```jsx
 
 ---
 
