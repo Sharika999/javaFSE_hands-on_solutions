@@ -50,6 +50,7 @@ class Welcome extends React.Component {
   }
 }
 
+
 ---
 
 ### 5. Explain function component
