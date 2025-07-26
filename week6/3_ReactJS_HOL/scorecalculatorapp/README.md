@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+### 📁 Week 6 – ReactJS Assignments
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This folder contains the three hands-on assignments completed as part of **Week 6 - Java Full Stack (ReactJS Module)**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+#### 📌 1_ReactJS_HOL – StudentApp
 
-### `npm start`
+A simple ReactJS application with the following components:
+- `Home`
+- `About`
+- `Contact`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Features:**
+- Basic routing using `react-router-dom`
+- Functional components
+- Simple navigation bar
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📂 Located in: `week6/1_ReactJS_HOL/`
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 📌 2_ReactJS_HOL – StudentApp (with Styling)
 
-### `npm run build`
+An enhanced version of the StudentApp with added styling.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Features:**
+- Component-based UI
+- CSS styling applied to components
+- React router navigation retained
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📂 Located in: `week6/2_ReactJS_HOL/`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+#### 📌 3_ReactJS_HOL – ScoreCalculatorApp
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A ReactJS application that allows users to input marks for different subjects and calculate the total and average score.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Features:**
+- Form-based input
+- State management using hooks (`useState`)
+- Dynamic score calculation and display
+- Modularized with custom component: `CalculateScore.js`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+📂 Located in: `week6/3_ReactJS_HOL/`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### 📦 Tools & Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- ReactJS (via `create-react-app`)
+- React Router DOM
+- JavaScript ES6
+- CSS
