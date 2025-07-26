@@ -55,6 +55,7 @@ class Welcome extends React.Component {
   }
 }
 
+---
 ###  5. Explain function component
 A function component is a plain JavaScript function that returns JSX. It is simpler and recommended for most use-cases today (with hooks).
 
@@ -67,6 +68,7 @@ function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 
+---
 ###  6. Define component constructor
 The constructor method is used in class components to initialize state and bind methods.
 
@@ -79,6 +81,7 @@ constructor(props) {
   super(props);
   this.state = { count: 0 };
 }
+---
 
 ###  7. Define render() function
 The render() function is a required method in class components. It returns JSX which is rendered to the DOM.
