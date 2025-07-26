@@ -18,8 +18,19 @@ This repository contains my solutions for the **mandatory hands-on exercises** f
 
 ## 📌 Submission Status
 - ✅ Week 1 Learning — Completed  
-- ✅ Week 1 Hands-on Exercises — Uploaded  
+- ✅ Week 1 Hands-on Exercises — Uploaded
+- ✅ Week 2 Learning — Completed  
+- ✅ Week 2 Hands-on Exercises — Uploaded
+- ✅ Week 3 Learning — Completed  
+- ✅ Week 3 Hands-on Exercises — Uploaded
+- ✅ Week 4 Learning — Completed  
+- ✅ Week 4 Hands-on Exercises — Uploaded
+- ✅ Week 5 Learning — Completed  
+- ✅ Week 5 Hands-on Exercises — Uploaded
+- ✅ Week 6 Learning — Completed  
+- ✅ Week 6 Hands-on Exercises — Uploaded   
 - 📝 Weekly SME sessions — Attending as scheduled
+  
 
 ## 📢 Instructions
 All files are organized as per the structure given in the **DN 4.0 Deep Skilling Handbook**. For any verification, you can check the folder names and exercise details.
