@@ -11,15 +11,15 @@ It demonstrates the use of:
 
 ---
 
-## 📘 React Component Lifecycle
+##  React Component Lifecycle
 
-### 🔍 Why is Component Lifecycle Important?
+###  Why is Component Lifecycle Important?
 
 Component lifecycle methods allow you to **hook into key moments** in a component’s life:
 - When it is **created**, **rendered**, **updated**, and **removed**.
 - Helps you **fetch data**, **handle cleanup**, and **respond to changes** efficiently.
 
-### ✅ Benefits:
+###  Benefits:
 - Control over **render timing and logic**
 - Clean handling of **external resources** (e.g., timers, APIs)
 - Helps in **optimizing performance**
@@ -27,7 +27,7 @@ Component lifecycle methods allow you to **hook into key moments** in a componen
 
 ---
 
-## 🔁 Lifecycle Hook Methods
+##  Lifecycle Hook Methods
 
 | Phase       | Method Name           | Purpose                                      |
 |-------------|-----------------------|----------------------------------------------|
@@ -39,7 +39,7 @@ Component lifecycle methods allow you to **hook into key moments** in a componen
 
 ---
 
-## 🔄 Component Rendering Sequence
+##  Component Rendering Sequence
 
 When a class component renders, this is the typical sequence:
 
@@ -52,5 +52,5 @@ When a class component renders, this is the typical sequence:
 
 ---
 
-## 📁 Project Structure
+
 
