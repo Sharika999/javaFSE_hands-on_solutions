@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# 4_ReactJS_HOL - Blog Posts React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React.js hands-on lab project created as part of the **Java FSE Week 6** module.
 
-## Available Scripts
+It demonstrates the use of:
+- Class components
+- State management
+- Lifecycle methods (`componentDidMount`, `componentDidCatch`)
+- Fetch API for external data
+- Component composition using props
 
-In the project directory, you can run:
+---
 
-### `npm start`
+##  React Component Lifecycle
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###  Why is Component Lifecycle Important?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Component lifecycle methods allow you to **hook into key moments** in a component’s life:
+- When it is **created**, **rendered**, **updated**, and **removed**.
+- Helps you **fetch data**, **handle cleanup**, and **respond to changes** efficiently.
 
-### `npm test`
+###  Benefits:
+- Control over **render timing and logic**
+- Clean handling of **external resources** (e.g., timers, APIs)
+- Helps in **optimizing performance**
+- Allows error handling through lifecycle events like `componentDidCatch`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+##  Lifecycle Hook Methods
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Phase       | Method Name           | Purpose                                      |
+|-------------|-----------------------|----------------------------------------------|
+| Mounting    | `constructor()`       | Initialize state                             |
+|             | `componentDidMount()` | Called once after the component is mounted   |
+| Updating    | `componentDidUpdate()`| Called after state or props change           |
+| Error       | `componentDidCatch()` | Catch and handle errors                      |
+| Unmounting  | `componentWillUnmount()`| Cleanup (e.g., clear timers, cancel requests)|
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##  Component Rendering Sequence
 
-### `npm run eject`
+When a class component renders, this is the typical sequence:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. `constructor()` — component is initialized  
+2. `render()` — UI is created based on state/props  
+3. `componentDidMount()` — runs after component is added to DOM  
+4. (Later) `componentDidUpdate()` — runs on state/prop change  
+5. `componentWillUnmount()` — runs before component is destroyed  
+6. `componentDidCatch()` — runs when there's an error
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
