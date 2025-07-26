@@ -53,12 +53,16 @@ class Welcome extends React.Component {
 
 ---
 
+```jsx
+
 ### 5. Explain function component
 A function component is a plain JavaScript function that returns JSX. These are simpler and more commonly used in modern React with hooks.
 
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
+
+```jsx
 
 ---
 
