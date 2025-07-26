@@ -66,9 +66,8 @@ function Welcome(props) {
 ### 6. Define component constructor
 The constructor method is used in class components to initialize state and bind methods.
 
-jsx
-Copy
-Edit
+
+
 constructor(props) {
   super(props);
   this.state = { count: 0 };
@@ -79,9 +78,8 @@ constructor(props) {
 ### 7. Define render() function
 The render() method is required in class components. It returns the JSX that React will render to the DOM.
 
-jsx
-Copy
-Edit
+
+
 render() {
   return <div>Hello World</div>;
 }
