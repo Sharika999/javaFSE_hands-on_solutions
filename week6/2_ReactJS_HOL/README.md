@@ -1,53 +1,48 @@
 # ReactJS Hands-On Lab – Student Management Portal
 
-This project is part of Week 6 assignment for the Java FSE program. It is a simple React app named **StudentApp** that displays basic content using React components.
+This project is part of **Week 6 assignment** for the Java FSE program. It is a simple React app named **StudentApp** that displays basic content using React components.
 
-##  Folder Name
+## 📁 Folder Name
 `2_ReactJS_HOL`
 
 ## 🔧 Features Implemented
-
 - A React app created using `create-react-app`
-- Three components: `Home`, `About`, and `Contact`
+- Three components: **Home**, **About**, and **Contact**
 - All components display specific messages in the browser
 
-## Screenshots
-
-Screenshots of the output are included in the `outputs` folder for reference.
-
----
-
-##  Conceptual Answers
-
-###  1. Explain React components
-
-React components are reusable and independent blocks of UI that can be rendered in a React application. Components help break the UI into smaller, manageable pieces. They can be class-based or function-based.
+## 📸 Screenshots
+Screenshots of the output are included in the `outputs/` folder for reference.
 
 ---
 
-###  2. Differences between components and JavaScript functions
+## 📘 Conceptual Answers
 
-| JavaScript Function                | React Component                           |
-|-----------------------------------|-------------------------------------------|
-| Performs a specific task or logic | Returns JSX that represents UI            |
-| No JSX involved                   | Can return JSX (HTML-like syntax)         |
-| Not rendered by React             | Rendered as part of the React DOM         |
-| No state or lifecycle             | Can have state and lifecycle (in classes) |
+### 1. Explain React components
+React components are **reusable UI building blocks** in a React application. They allow you to divide the UI into small, independent, and manageable pieces. Components can be either **class-based** or **function-based**.
 
 ---
 
-###  3. Types of components
+### 2. Identify the differences between components and JavaScript functions
 
-1. **Class Component** – ES6 classes that extend `React.Component`
-2. **Function Component** – Simple functions that return JSX
+| JavaScript Function                        | React Component                              |
+|-------------------------------------------|----------------------------------------------|
+| Performs logic or calculation             | Returns JSX to render UI                     |
+| No JSX involved                            | Can return JSX (HTML-like syntax)            |
+| Not part of the React DOM lifecycle        | Rendered by React into the DOM               |
+| No state or lifecycle                      | Can have state and lifecycle (especially in class components) |
 
 ---
 
-###  4. Explain class component
+### 3. Identify the types of components
+There are two types of React components:
+- **Class Components** – Created using ES6 classes that extend `React.Component`
+- **Function Components** – Simple JavaScript functions that return JSX (recommended with hooks)
+- 
+---
 
-A class component is a JavaScript class that extends `React.Component`. It must include a `render()` method to return JSX.
+### 4. Explain class component
+A **class component** is a JavaScript class that extends `React.Component`. It must include a `render()` method to return JSX.
 
-Example:
 ```jsx
 class Welcome extends React.Component {
   render() {
@@ -56,23 +51,19 @@ class Welcome extends React.Component {
 }
 
 ---
-###  5. Explain function component
-A function component is a plain JavaScript function that returns JSX. It is simpler and recommended for most use-cases today (with hooks).
 
-Example:
+### 5. Explain function component
+A function component is a plain JavaScript function that returns JSX. These are simpler and more commonly used in modern React with hooks.
 
-jsx
-Copy
-Edit
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 
 ---
-###  6. Define component constructor
-The constructor method is used in class components to initialize state and bind methods.
 
-Example:
+
+### 6. Define component constructor
+The constructor method is used in class components to initialize state and bind methods.
 
 jsx
 Copy
@@ -81,12 +72,11 @@ constructor(props) {
   super(props);
   this.state = { count: 0 };
 }
+
 ---
 
-###  7. Define render() function
-The render() function is a required method in class components. It returns JSX which is rendered to the DOM.
-
-Example:
+### 7. Define render() function
+The render() method is required in class components. It returns the JSX that React will render to the DOM.
 
 jsx
 Copy
@@ -94,7 +84,3 @@ Edit
 render() {
   return <div>Hello World</div>;
 }
-
-
-
-
