@@ -1,0 +1,130 @@
+Conflict Resolution in Git - Hands-on Example
+
+User: visio@Sharika MINGW64 ~/gitHandsons (master)
+
+$ git init
+Initialized empty Git repository in C:/gitHandsons/.git/
+
+$ git branch FeatureWork
+fatal: Not a valid object name: 'master'.
+
+$ git branch
+
+$ vi fileA.txt
+
+$ git add .
+warning: LF will be replaced by CRLF in fileA.txt.
+The file will have its original line endings in your working directory
+
+$ git commit -m "added fileA.txt"
+[master (root-commit) 1234abc] added fileA.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fileA.txt
+
+$ git branch
+* master
+
+$ git branch FeatureWork
+
+$ git branch
+  FeatureWork
+* master
+
+$ git checkout FeatureWork
+Switched to branch 'FeatureWork'
+
+$ vi sample.xml
+
+$ cat sample.xml
+Data inserted from FeatureWork branch
+
+$ git add .
+warning: LF will be replaced by CRLF in sample.xml.
+The file will have its original line endings in your working directory
+
+$ git commit -m "sample.xml added from FeatureWork branch"
+[FeatureWork abcd123] sample.xml added from FeatureWork branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.xml
+
+$ git checkout master
+Switched to branch 'master'
+
+$ vi sample.xml
+
+$ cat sample.xml
+Data inserted from master branch
+
+$ git add .
+warning: LF will be replaced by CRLF in sample.xml.
+The file will have its original line endings in your working directory
+
+$ git commit -m "sample.xml added from master branch"
+[master bcde234] sample.xml added from master branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.xml
+
+$ git log --graph --oneline --decorate --all
+* bcde234 (HEAD -> master) sample.xml added from master branch
+| * abcd123 (FeatureWork) sample.xml added from FeatureWork branch
+|/
+* 1234abc added fileA.txt
+
+$ git diff master FeatureWork
+diff --git a/sample.xml b/sample.xml
+index 1111111..2222222 100644
+--- a/sample.xml
++++ b/sample.xml
+@@ -1 +1 @@
+-Data inserted from master branch
++Data inserted from FeatureWork branch
+
+$ git merge FeatureWork
+CONFLICT (add/add): Merge conflict in sample.xml
+Auto-merging sample.xml
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ git config merge.tool vimdiff
+
+$ git mergetool
+Merging:
+sample.xml
+
+Normal merge conflict for 'sample.xml':
+  {local}: created file
+  {remote}: created file
+1 file to edit
+
+$ git add .
+
+$ git commit -m "sample.xml merged"
+
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+$ cat sample.xml
+<<<<<<< HEAD
+Data inserted from master branch
+=======
+Data inserted from FeatureWork branch
+>>>>>>> FeatureWork
+
+$ git branch
+  FeatureWork
+* master
+
+$ git branch -d FeatureWork
+Deleted branch FeatureWork (was abcd123).
+
+$ git branch
+* master
+
+$ git log --graph --oneline --decorate
+*   56789ef (HEAD -> master) sample.xml merged
+|\
+| * abcd123 sample.xml added from FeatureWork branch
+* | bcde234 sample.xml added from master branch
+|/
+* 1234abc added fileA.txt
+
