@@ -28,8 +28,10 @@ This repository contains my solutions for the **mandatory hands-on exercises** f
 - ✅ Week 5 Learning — Completed  
 - ✅ Week 5 Hands-on Exercises — Uploaded
 - ✅ Week 6 Learning — Completed  
-- ✅ Week 6 Hands-on Exercises — Uploaded   
-- 📝 Weekly SME sessions — Attending as scheduled
+- ✅ Week 7 Hands-on Exercises — Uploaded
+- ✅ Week 8 Hands-on Exercises — Uploaded
+
+- 📝 Weekly SME sessions — Attended 
   
 
 ## 📢 Instructions
